@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/colmbegs89/initial-express/issues"
   },
-  "homepage": "https://github.com/colmbegs89/initial-express#readme"
+  "homepage": "https://github.com/colmbegs89/initial-express#readme",
+  "dependencies": {
+    "express-generator": "^4.15.5"
+  }
 }
