@@ -1,0 +1,19 @@
+{
+  "name": "express-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/colmbegs89/initial-express.git"
+  },
+  "author": "Colm Begley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/colmbegs89/initial-express/issues"
+  },
+  "homepage": "https://github.com/colmbegs89/initial-express#readme"
+}
