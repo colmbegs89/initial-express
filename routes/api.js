@@ -39,23 +39,11 @@ let mileage = ''
     console.log("User name = "+user_name+", password is "+password);
     res.end(JSON.stringify(req.body));
   });
-// router.post('/create', (req, res) => {
-//   var options = {
-//     uri: process.env.SYS_API_URL + '/hardware/create',
-//     method: 'POST',
-//     json: JSON.parse(req.body.item)
-//   }
-//   request(options, function (error, response, body) {
-//     if (error) {
-//       console.error(error.toString())
-//       res.json(error.toString())
-//     } else {
-//       res.statusCode = response.statusCode
-//       res.json(body)
-//     }
-//   })
-// })
-
-
+  router.post('/here',function(req,res){
+    var user_name=req.body.user;
+    var password=req.body.password;
+    console.log("User name = "+user_name+", password is "+password);
+    res.end(JSON.stringify(req.body));
+  });
 
 module.exports = router

@@ -1,7 +1,12 @@
 doctype html              
 html. 
-    <body>     
-        <div>Hello, yes this is dog1</div>
+    <body>
+        <p id="test" value=""></p>
+        <script>
+            var test = window.localStorage.mydata;
+            document.getElementById("test").innerHTML = test;
+        </script>     
+        <div>Welcome #{user}</div>
     </body>
 //- block content
   //- h1= title
