@@ -1,7 +1,13 @@
 doctype html              
 html. 
     <body>     
-        <div>Your Mileage is #{title}  </div>
+        <div>
+        <form action="/api/getMileage" method="post">
+         <label for="team_name">Enter name: </label>
+        <input id="team_name" type="text" name="name_field" value="Default name for team.">
+        <input type="submit" value="OK">
+        </form>
+        <p>Your Mileage is #{title}</p>  </div>
     </body>
 //- block content
   //- h1= title

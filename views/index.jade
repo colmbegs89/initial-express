@@ -1,8 +1,34 @@
 doctype htm             
 html.
+    <head>
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">  </script>
+    <script>
+      $(document).ready(function(){
+        var user,pass;
+        $("#submit").click(function(){
+          user=$("#user").val();
+          pass=$("#password").val();
+          $.post("http://localhost:3000/api/login",{user: user,password: pass}, function(data){
+            if(data)
+              {
+                //- window.location = data.redirect
+                //- $("#user").val() = data
+                console.log(data);
+                console.log(JSON.parse(data).user)
+                //- alert("login success");
+              }
+          });
+        });
+      });
+    </script>
+    </head>
     <body>
         #{title}     
         <div>Hello, yes this is dog</div>
+         <h1>Hello people !</h1>
+        <input type="TEXT" id="user" size="40"/><br/>
+        <input type="TEXT" id="password" size="40"/><br/>
+        <input type="button" id="submit" value="Submit"/>
     </body>
 //- block content
 //-   h1= title
